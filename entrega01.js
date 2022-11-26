@@ -39,7 +39,7 @@ this.mascotas=mascotas;
     const libros = [{nombre:"El amante japones" ,autor: "Isabel Allende"},{nombre: "Nunca llegamos a la india",autor: "Juan Sklar"}];
     const mascotas = ['perro','gato','canario'];
     
-    const usuario = new usuarios(nombre,apellido,libros,mascotas);
+    const usuario = new usuario(nombre,apellido,libros,mascotas);
     console.log('Nombre del usuario (string):')
     console.log(usuario.getFullName()); 
     console.log('Cantidad de mascotas (number):')
