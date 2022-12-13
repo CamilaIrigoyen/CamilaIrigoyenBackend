@@ -1,0 +1,21 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <h2>Ingresa Producto</h2>
+    <form action="./apirestful/producto.js/" enctype="multipart/form-data"  method="POST">
+        <h3>Nombre: </h3><input type="text" name="nombre">
+        <h3>Title: </h3><input type="text" name="title">
+        <h3>Thumbnail: </h3><input type="text"  name="thumbnail">
+        <button type="submit" onclick="enviar">Enviar</button>
+    </form>
+
+    <h2>Muestra Productos</h2>
+    <button id="mostrar" onclick="mostrar">Mostrar</button>
+</body>
+</html>
