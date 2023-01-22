@@ -12,7 +12,8 @@ const App = express();
 //--------------------------------------------------
 
 //------------- Middleware -----------
-App.use(express.static('public'))  
+App.use(express.static('/productos', RouterProducto)
+  
 // me permite cargar archivos y contenido desde el diresctorios public
 
 
@@ -26,8 +27,8 @@ App.use(express.json())  // --> para entender el body en formato JSON
 
 App.use(express.text());  // ---> para entender el body en formato text 
 
-App.use(accountRouter);
-App.use(RouterProducto);
+App.use('/carritos', accountRouter);
+App.use('/productos',RouterProducto);
 //---------------------------------------------------
 
 

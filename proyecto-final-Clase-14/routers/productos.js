@@ -20,7 +20,7 @@ RouterProducto.use((req, res, next) =>{   // esta func se ejecuta antes que el e
 //Vamos a usar el Cliente Postman, para las peticiones http
 RouterProducto.get("/:id", (req, res) => {   
   const { id } = req.params;
-  const {idProduct} = PRODU_DDBB.find((e) => e.id === id);
+  const idProduct = PRODU_DDBB.find((e) => e.id === id);
   /* const {nameProduct} = PRODU_DDBB.find((us) => us.name === name); */
 
   if (!idProduct /* || !nameProduct */ ) {

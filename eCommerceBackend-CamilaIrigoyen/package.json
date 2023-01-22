@@ -1,0 +1,16 @@
+{
+  "name": "ecommercebackend-camilairigoyen",
+  "version": "1.0.0",
+  "description": "primera entrega tp camila irigoyen",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "camila irigoyen",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
